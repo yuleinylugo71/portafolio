@@ -2594,3 +2594,103 @@
         animation: none !important;
       }
     }
+
+    /* Clean services section: compact capability list. */
+    #lo-que-hago {
+      padding-top: 34px;
+      padding-bottom: 38px;
+    }
+
+    #lo-que-hago .section-title {
+      margin-bottom: 18px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .service-card {
+      min-height: 0;
+      display: grid;
+      grid-template-columns: auto 48px minmax(0, 1fr);
+      align-items: center;
+      gap: 14px;
+      padding: 14px;
+      border: 1px solid rgba(242, 238, 216, 0.14);
+      border-radius: 6px;
+      background: rgba(5, 6, 5, 0.42);
+    }
+
+    .service-number {
+      align-self: start;
+      color: var(--orange);
+      font-size: 0.72rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .service-icon {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(217, 242, 65, 0.42);
+      border-radius: 50%;
+      color: var(--orange);
+      background: rgba(217, 242, 65, 0.055);
+      font-size: 0.66rem;
+      font-weight: 900;
+      line-height: 1;
+      letter-spacing: 0.02em;
+    }
+
+    .service-card h3 {
+      margin-bottom: 4px;
+      color: var(--ink);
+      font-family: "Anton", "Bebas Neue", sans-serif;
+      font-size: clamp(1.18rem, 2vw, 1.55rem);
+      font-weight: 400;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .service-card p {
+      color: var(--soft-ink);
+      font-size: 0.7rem;
+      line-height: 1.48;
+    }
+
+    :root[data-theme="light"] .service-card {
+      border-color: rgba(46, 46, 46, 0.14);
+      background: rgba(255, 255, 255, 0.72);
+      box-shadow: 0 14px 34px rgba(46, 46, 46, 0.07);
+    }
+
+    :root[data-theme="light"] .service-card h3,
+    :root[data-theme="light"] .service-card p {
+      color: #2e2e2e;
+    }
+
+    :root[data-theme="light"] .service-number,
+    :root[data-theme="light"] .service-icon {
+      color: #71820f;
+    }
+
+    @media (max-width: 720px) {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .service-card {
+        grid-template-columns: auto minmax(0, 1fr);
+      }
+
+      .service-icon {
+        display: none;
+      }
+    }
