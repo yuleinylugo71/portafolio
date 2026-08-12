@@ -1,0 +1,59 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 1899 >>
+stream
+BT /F2 24 Tf 54 740 Td (Yuleiny Lugo Quimbayo) Tj ET
+BT /F1 12 Tf 54 712 Td (Desarrolladora web integral | Analisis y desarrollo de software) Tj ET
+BT /F1 10 Tf 54 690 Td (Colombia | GitHub: github.com/yuleinylugo71 | Portafolio: yuleiny.site) Tj ET
+BT /F2 14 Tf 54 650 Td (Perfil) Tj ET
+BT /F1 10 Tf 54 628 Td (Estudiante de tecnologia en analisis y desarrollo de software y tecnica en sistemas.) Tj ET
+BT /F1 10 Tf 54 612 Td (Creo soluciones web utiles, modernas y bien presentadas, combinando interfaces cuidadas,) Tj ET
+BT /F1 10 Tf 54 596 Td (bases de datos, PWA y sensibilidad visual.) Tj ET
+BT /F2 14 Tf 54 560 Td (Habilidades tecnicas) Tj ET
+BT /F1 10 Tf 54 538 Td (JavaScript, TypeScript, HTML5, CSS3, Node.js, MySQL, PostgreSQL, SQLite, PWA y GitHub.) Tj ET
+BT /F2 14 Tf 54 502 Td (Proyectos destacados) Tj ET
+BT /F2 11 Tf 54 480 Td (AgroTrace) Tj ET
+BT /F1 10 Tf 130 480 Td (PWA de trazabilidad agricola para productores, lotes, cosechas y consulta por codigo.) Tj ET
+BT /F2 11 Tf 54 456 Td (ArtHuila) Tj ET
+BT /F1 10 Tf 130 456 Td (Marketplace de artesanias con catalogo, favoritos, carrito y gestion de pedidos.) Tj ET
+BT /F2 11 Tf 54 432 Td (SIRC) Tj ET
+BT /F1 10 Tf 130 432 Td (Sistema de registro ciudadano offline-first para centralizar datos y generar reportes.) Tj ET
+BT /F2 14 Tf 54 392 Td (Servicios y capacidades) Tj ET
+BT /F1 10 Tf 54 370 Td (Interfaces web responsivas, organizacion de informacion, integracion con bases de datos,) Tj ET
+BT /F1 10 Tf 54 354 Td (prototipos funcionales, formularios, despliegue de sitios y mejora visual de experiencias.) Tj ET
+BT /F2 14 Tf 54 314 Td (Formacion) Tj ET
+BT /F1 10 Tf 54 292 Td (Tecnologia en Analisis y Desarrollo de Software - en formacion. Tecnica en Sistemas.) Tj ET
+BT /F2 14 Tf 54 252 Td (Contacto) Tj ET
+BT /F1 10 Tf 54 230 Td (Disponible para presentar proyectos, colaborar y seguir creciendo como desarrolladora.) Tj ET
+
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+2347
+%%EOF

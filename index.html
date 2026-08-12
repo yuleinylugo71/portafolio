@@ -1,315 +1,239 @@
 ﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yuleiny Lugo | Portafolio</title>
-  <meta name="description" content="Portafolio de Yuleiny Lugo Quimbayo, desarrolladora web con enfoque en software, bases de datos, PWA y diseno visual." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=League+Gothic&display=swap" rel="stylesheet" />
-  <link href="https://fonts.cdnfonts.com/css/brittany-signature" rel="stylesheet" />
-  <script>
-    (function () {
-      const savedTheme = localStorage.getItem("portfolio-theme");
-      document.documentElement.dataset.theme = savedTheme || "dark";
-    })();
-  </script>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yuleiny Lugo | Creative Developer</title>
+    
+    <!-- Fuentes: Outfit (Sans Moderna) + Playfair Display (Serif Elegante) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="stage" id="inicio">
-    <header class="topbar" aria-label="Navegacion principal">
-      <a class="brand" href="#inicio" aria-label="Yuleiny Dev inicio">
-        <span class="brand-mark">YL</span>
-        <span>Yuleiny</span>
-      </a>
-      <nav class="nav">
-        <a href="#proyectos">Proyectos</a>
-        <a href="#sobre-mi">Sobre mi</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-      <button class="mode" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false" data-theme-toggle><span>◐</span></button>
+    <!-- Cursor Personalizado -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Navegación -->
+    <header class="site-nav">
+        <a href="#inicio" class="logo magnetic" data-cursor="hover">Yuleiny<span class="italic-serif">.</span></a>
+        <nav class="links">
+            <a href="#proyectos" class="magnetic" data-cursor="hover">Trabajos</a>
+            <a href="#info" class="magnetic" data-cursor="hover">Sobre mí</a>
+            <a href="#contacto" class="magnetic" data-cursor="hover">Contacto</a>
+        </nav>
     </header>
 
-    <main>
-      <section class="hero" aria-label="Presentacion">
-        <div class="reveal">
-          <h1><span class="name-line name-fill" data-text="Yuleiny">Yuleiny</span><span class="name-line outline">Lugo</span></h1>
-          <p class="kicker">Desarrolladora Web Integral</p>
-          <p class="intro">Estudiante de tecnologia en analisis y desarrollo de software y tecnica en sistemas. Creo soluciones web utiles, modernas y bien presentadas con bases de datos, PWA y sensibilidad visual.</p>
-          <div class="hero-actions">
-            <a class="small-link" href="#proyectos">Ver proyectos</a>
-            <a class="small-link" href="#contacto">Contacto</a>
-          </div>
+    <main data-scroll-container>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero fade-up-section">
+            <div class="hero-content-split">
+                
+                <!-- Izquierda: Textos Principales -->
+                <div class="hero-left">
+                    <h1 class="hero-title">
+                        Desarrollo web <br>
+                        <span class="italic-serif highlight">creativo</span> & <br>
+                        funcional.
+                    </h1>
+                    
+                    <div class="hero-bottom-text">
+                        <p class="hero-bio">Transformo ideas complejas en experiencias web <em>memorables</em>, fluidas y respaldadas por arquitecturas de datos sólidas.</p>
+                        <a href="#proyectos" class="scroll-down magnetic" data-cursor="hover">
+                            Explorar
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+                        </a>
+                        <a href="assets/hoja-de-vida-yuleiny-lugo.pdf" class="scroll-down magnetic" data-cursor="hover" download>
+                            Descargar hoja de vida
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Derecha: Foto -->
+                <div class="hero-right">
+                    <div class="avatar-wrapper magnetic" data-cursor="hover">
+                        <img src="assets/yuleiny-profile.png" alt="Yuleiny Lugo" class="avatar">
+                        <div class="rotating-badge">
+                            <svg viewBox="0 0 100 100" width="120" height="120">
+                                <defs>
+                                    <path id="circle" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"/>
+                                </defs>
+                                <text font-size="12">
+                                    <textPath href="#circle">
+                                        DISPONIBLE PARA PROYECTOS • 
+                                    </textPath>
+                                </text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hero-location">Basada en Colombia <br> Trabajando Globalmente</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Marquesina Animada -->
+        <div class="marquee-container fade-up-section">
+            <div class="marquee">
+                <span>INTERFACES WEB — <span class="italic-serif">PWA</span> — BASES DE DATOS — <span class="italic-serif">PROTOTIPOS</span> — REACT — <span class="italic-serif">NEXT.JS</span> — </span>
+                <span>INTERFACES WEB — <span class="italic-serif">PWA</span> — BASES DE DATOS — <span class="italic-serif">PROTOTIPOS</span> — REACT — <span class="italic-serif">NEXT.JS</span> — </span>
+            </div>
         </div>
 
-        <div class="hero-visual reveal delay-one">
-          <figure class="portrait-frame">
-            <img src="assets/yuleiny-profile.png" alt="Retrato de Yuleiny Lugo Quimbayo" />
-          </figure>
-          <p class="portrait-note">
-            <strong>Yuleiny Lugo Quimbayo</strong>
-            Desarrollo web, software y experiencias digitales.
-          </p>
-        </div>
-      </section>
+        <!-- Proyectos -->
+        <section id="proyectos" class="work-section fade-up-section">
+            <h2 class="section-heading">Proyectos <span class="italic-serif">Seleccionados</span></h2>
+            
+            <div class="project-cards">
+                <!-- Proyecto 1 -->
+                <article class="project-card fade-up-section">
+                    <div class="project-card-image" data-cursor="view">
+                        <a href="https://agrotrace.julieth.site" target="_blank">
+                            <img src="assets/Agrotrace.png" alt="AgroTrace">
+                        </a>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>AgroTrace</h3>
+                        <p class="project-tags">PWA / Trazabilidad Agrícola</p>
+                        <p class="project-desc">Aplicación web progresiva enfocada en el registro de productores, lotes y cosechas. Una interfaz moderna y funcional.</p>
+                        <a href="https://agrotrace.julieth.site" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
+                    </div>
+                </article>
 
-      <section id="proyectos" aria-label="Proyectos destacados">
-        <div class="projects-head reveal">
-          <h2 class="section-title">Proyectos seleccionados...</h2>
-          <a class="small-link" href="https://github.com/yuleinylugo71" target="_blank" rel="noreferrer">Ver todos los proyectos -></a>
-        </div>
-        <div class="project-grid">
-          <a class="project-card reveal" href="https://github.com/yuleinylugo71" target="_blank" rel="noreferrer">
-            <span class="project-number">01.</span>
-            <div class="project-shot"><span>AgroTrace</span></div>
-            <div class="project-body">
-              <div class="project-title-row"><strong>AgroTrace</strong><span class="project-icon">◎</span></div>
-              <p class="project-type">Trazabilidad agricola - PWA</p>
-              <p class="project-text">Aplicacion web progresiva para registrar y consultar productores, lotes, cosechas y procesos agricolas.</p>
-            </div>
-            <div class="project-tags"><span>TypeScript</span><span>NextJS</span><span>PostgreSQL</span><span>PWA</span></div>
-            <span class="project-link">Ver proyecto -></span>
-          </a>
-          <a class="project-card reveal delay-one" href="https://arthuila.yuleiny.site" target="_blank" rel="noreferrer">
-            <span class="project-number">02.</span>
-            <div class="project-shot"><span>ArtHuila</span></div>
-            <div class="project-body">
-              <div class="project-title-row"><strong>ArtHuila</strong><span class="project-icon">▢</span></div>
-              <p class="project-type">Marketplace de artesanias</p>
-              <p class="project-text">Plataforma de comercio electronico para venta de artesanias con catalogo, carrito y gestion de pedidos.</p>
-            </div>
-            <div class="project-tags"><span>JavaScript</span><span>CSS</span><span>SQL</span><span>PostgreSQL</span></div>
-            <span class="project-link">Ver proyecto -></span>
-          </a>
-          <a class="project-card reveal delay-two" href="https://github.com/yuleinylugo71" target="_blank" rel="noreferrer">
-            <span class="project-number">03.</span>
-            <div class="project-shot"><span>SIRC</span></div>
-            <div class="project-body">
-              <div class="project-title-row"><strong>SIRC</strong><span class="project-icon">☷</span></div>
-              <p class="project-type">Sistema de registro ciudadano</p>
-              <p class="project-text">Aplicacion web offline-first para registro de ciudadanos, sincronizacion segura y generacion de reportes.</p>
-            </div>
-            <div class="project-tags"><span>HTML</span><span>CSS</span><span>SQLite</span><span>PostgreSQL</span></div>
-            <span class="project-link">Ver proyecto -></span>
-          </a>
-        </div>
-      </section>
+                <!-- Proyecto 2 -->
+                <article class="project-card fade-up-section reverse">
+                    <div class="project-card-image" data-cursor="view">
+                        <a href="https://arthuila.yuleiny.site" target="_blank">
+                            <img src="assets/Arthila.png" alt="ArtHuila">
+                        </a>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>ArtHuila</h3>
+                        <p class="project-tags">Marketplace / Comercio Electrónico</p>
+                        <p class="project-desc">Plataforma dedicada a la venta de artesanías, integrando un catálogo completo, carrito de compras y gestión de pedidos fluida.</p>
+                        <a href="https://arthuila.yuleiny.site" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
+                    </div>
+                </article>
 
-      <section id="lo-que-hago" aria-label="Lo que hago">
-        <h2 class="section-title reveal">Lo que hago...</h2>
-        <div class="services-grid">
-          <article class="service-card reveal">
-            <span class="service-number">01.</span>
-            <span class="service-icon" aria-hidden="true">WEB</span>
-            <div>
-              <h3>Interfaces web</h3>
-              <p>Paginas modernas, responsive y bien presentadas para marcas, proyectos y portafolios.</p>
+                <!-- Proyecto 3 -->
+                <article class="project-card fade-up-section">
+                    <div class="project-card-image" data-cursor="view">
+                        <a href="https://github.com/yuleinylugo71" target="_blank">
+                            <img src="assets/sirc.png" alt="SIRC">
+                        </a>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>SIRC</h3>
+                        <p class="project-tags">Registro Ciudadano / Offline-first</p>
+                        <p class="project-desc">Sistema robusto de registro ciudadano. Diseñado para funcionar sin conexión y sincronizar de manera segura en la nube.</p>
+                        <a href="https://github.com/yuleinylugo71" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
+                    </div>
+                </article>
             </div>
-          </article>
-          <article class="service-card reveal delay-one">
-            <span class="service-number">02.</span>
-            <span class="service-icon" aria-hidden="true">DB</span>
-            <div>
-              <h3>Sistemas con datos</h3>
-              <p>Registro, consulta y organizacion de informacion con bases de datos y reportes claros.</p>
-            </div>
-          </article>
-          <article class="service-card reveal delay-two">
-            <span class="service-number">03.</span>
-            <span class="service-icon" aria-hidden="true">PWA</span>
-            <div>
-              <h3>PWA y responsive</h3>
-              <p>Experiencias listas para celular, escritorio y uso frecuente con mejor rendimiento.</p>
-            </div>
-          </article>
-          <article class="service-card reveal">
-            <span class="service-number">04.</span>
-            <span class="service-icon" aria-hidden="true">UI</span>
-            <div>
-              <h3>Prototipos funcionales</h3>
-              <p>Versiones navegables para validar ideas, flujos y presentaciones antes de construir.</p>
-            </div>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section id="sobre-mi" aria-label="Sobre mi">
-        <h2 class="section-title reveal">Preguntame mas sobre...</h2>
-        <div class="info-grid">
-          <article class="info-card reveal">
-            <div class="info-head">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c4.5 3.2 7 6.9 7 10.5A7 7 0 0 1 5 12.5C5 8.9 7.5 5.2 12 2Zm0 18a4.5 4.5 0 0 0 4.5-4.5c0-2.1-1.4-4.4-4.5-7-3.1 2.6-4.5 4.9-4.5 7A4.5 4.5 0 0 0 12 20Z"/></svg>
-              <span>Ideas claras</span>
+        <!-- Información -->
+        <section id="info" class="about-section fade-up-section">
+            <div class="about-grid">
+                <h2 class="section-heading">El <span class="italic-serif">Enfoque</span></h2>
+                <div class="about-text">
+                    <p class="large-text">No solo escribo código. Construyo <span class="italic-serif highlight-subtle">sistemas digitales</span> pensados para el usuario final.</p>
+                    <p>Soy estudiante de análisis y desarrollo de software con pasión por el diseño limpio y el orden técnico. Desde la estructuración de una base de datos PostgreSQL hasta la última animación CSS, me aseguro de que cada detalle aporte a una experiencia superior.</p>
+                </div>
             </div>
-            <p>Analizo necesidades y convierto procesos en soluciones digitales faciles de entender, usar y presentar.</p>
-          </article>
-          <article class="info-card reveal delay-one">
-            <div class="info-head">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16v4H4V4Zm0 6h7v10H4V10Zm9 0h7v10h-7V10Z"/></svg>
-              <span>Interfaces web</span>
-            </div>
-            <p>Construyo experiencias con HTML, CSS, JavaScript y TypeScript, cuidando estructura visual y diseno adaptable.</p>
-          </article>
-          <article class="info-card reveal delay-two">
-            <div class="info-head">
-              <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3c4.4 0 8 1.3 8 3v12c0 1.7-3.6 3-8 3s-8-1.3-8-3V6c0-1.7 3.6-3 8-3Zm0 2C8.2 5 6 5.9 6 6s2.2 1 6 1 6-.9 6-1-2.2-1-6-1Zm6 4.1C16.5 9.7 14.3 10 12 10s-4.5-.3-6-.9V12c0 .1 2.2 1 6 1s6-.9 6-1V9.1Zm0 6C16.5 15.7 14.3 16 12 16s-4.5-.3-6-.9V18c0 .1 2.2 1 6 1s6-.9 6-1v-2.9Z"/></svg>
-              <span>Datos & PWA</span>
-            </div>
-            <p>Integro bases de datos, consultas, reportes y mejoras PWA para crear herramientas utiles en el uso diario.</p>
-          </article>
-        </div>
-      </section>
+        </section>
 
-      <section id="habilidades" aria-label="Habilidades">
-        <h2 class="section-title reveal">Herramientas que uso...</h2>
-        <div class="skills-marquee reveal">
-          <div class="skills-slider" aria-label="Slider de herramientas">
-            <button class="skill-arrow" type="button" aria-label="Ver herramientas anteriores" data-skill-prev>&lt;</button>
-            <div class="skills-window">
-              <div class="skills-track" data-skills-track>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/javascript/8EA018" alt="" /></span><span class="skill-name">JavaScript</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/typescript/8EA018" alt="" /></span><span class="skill-name">TypeScript</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/html5/8EA018" alt="" /></span><span class="skill-name">HTML5</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/css/8EA018" alt="" /></span><span class="skill-name">CSS3</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/mysql/8EA018" alt="" /></span><span class="skill-name">MySQL</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/postgresql/8EA018" alt="" /></span><span class="skill-name">PostgreSQL</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/nodedotjs/8EA018" alt="" /></span><span class="skill-name">Node.js</span></div>
-                <div class="skill-item"><span class="skill-icon"><img src="https://cdn.simpleicons.org/github/8EA018" alt="" /></span><span class="skill-name">GitHub</span></div>
-              </div>
+        <!-- Contacto -->
+        <section id="contacto" class="contact-section fade-up-section">
+            <div class="contact-header">
+                <h2>¿Tienes una <span class="italic-serif">idea</span>?</h2>
+                <a href="mailto:yuleiny@example.com" class="big-email magnetic" data-cursor="hover">Hablemos ↗</a>
             </div>
-            <button class="skill-arrow" type="button" aria-label="Ver mas herramientas" data-skill-next>&gt;</button>
-          </div>
-        </div>
-      </section>
-
-      <section class="contact-layout" id="contacto" aria-label="Contacto">
-        <div class="contact-copy reveal">
-          <h2 class="section-title">Contacto...</h2>
-          <p>Estoy disponible para presentar proyectos, colaborar y seguir creciendo como desarrolladora. Hablemos de tu idea y de como convertirla en una experiencia digital clara.</p>
-          <p class="final-line">Funcion, arte y codigo. Orden tecnico, creatividad visual y soluciones con proposito.</p>
-        </div>
-        <form class="contact-form reveal delay-one" action="mailto:yuleiny@example.com" method="post" enctype="text/plain">
-          <label>Nombre<input name="nombre" placeholder="Escribe tu nombre" /></label>
-          <label>Correo<input name="correo" type="email" placeholder="Escribe tu correo" /></label>
-          <label>Mensaje<textarea name="mensaje" rows="5" placeholder="Mensaje"></textarea></label>
-          <button class="small-link send" type="submit">Enviar mensaje</button>
-        </form>
-      </section>
+            
+            <div class="contact-footer">
+                <div class="socials">
+                    <a href="https://github.com/yuleinylugo71" target="_blank" class="magnetic" data-cursor="hover">GitHub</a>
+                    <a href="#" class="magnetic" data-cursor="hover">LinkedIn</a>
+                </div>
+                <div class="manifesto">
+                    Función, <span class="italic-serif">arte</span> y código.
+                </div>
+                <div class="credits">
+                    © 2026 Yuleiny Lugo
+                </div>
+            </div>
+        </section>
     </main>
 
-    <p class="footer-note">© 2026 Creado personalmente por Yuleiny Lugo Quimbayo.</p>
-    <div class="socials" aria-label="Redes sociales">
-      <a href="#contacto" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm0 2A3.8 3.8 0 0 0 4 7.8v8.4A3.8 3.8 0 0 0 7.8 20h8.4a3.8 3.8 0 0 0 3.8-3.8V7.8A3.8 3.8 0 0 0 16.2 4H7.8Zm4.2 3.1A4.9 4.9 0 1 1 7.1 12 4.9 4.9 0 0 1 12 7.1Zm0 2A2.9 2.9 0 1 0 14.9 12 2.9 2.9 0 0 0 12 9.1Zm5.15-2.35a1.15 1.15 0 1 1-1.15 1.15 1.15 1.15 0 0 1 1.15-1.15Z"/></svg>
-      </a>
-      <a href="#contacto" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8.3V6.7c0-.78.18-1.2 1.22-1.2H17V2.17A22.6 22.6 0 0 0 14.42 2C11.86 2 10.1 3.56 10.1 6.43V8.3H7.2V12h2.9v10H14V12h2.95l.45-3.7H14Z"/></svg>
-      </a>
-      <a href="https://github.com/yuleinylugo71" target="_blank" rel="noreferrer" aria-label="GitHub">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2A10.1 10.1 0 0 0 8.8 21.68c.5.1.68-.22.68-.48v-1.86c-2.78.6-3.37-1.18-3.37-1.18a2.65 2.65 0 0 0-1.1-1.45c-.9-.62.07-.6.07-.6a2.1 2.1 0 0 1 1.53 1.03 2.13 2.13 0 0 0 2.91.83 2.15 2.15 0 0 1 .64-1.34c-2.22-.25-4.55-1.11-4.55-4.94a3.87 3.87 0 0 1 1.03-2.68 3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.47 9.47 0 0 1 5 0c1.9-1.29 2.74-1.02 2.74-1.02.55 1.37.2 2.38.1 2.64a3.86 3.86 0 0 1 1.03 2.68c0 3.84-2.34 4.68-4.57 4.93a2.4 2.4 0 0 1 .68 1.87v2.69c0 .26.18.58.69.48A10.1 10.1 0 0 0 12 2Z"/></svg>
-      </a>
-    </div>
-  </div>
-  <div class="theme-fade" aria-hidden="true"></div>
-  <script>
-    const themeButton = document.querySelector("[data-theme-toggle]");
-    const root = document.documentElement;
+    <script>
+        // Animaciones Reveladoras al hacer Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
 
-    function updateThemeButton() {
-      const isDark = root.dataset.theme === "dark";
-      themeButton.querySelector("span").textContent = isDark ? "☀" : "◐";
-      themeButton.setAttribute("aria-label", isDark ? "Cambiar a modo claro" : "Cambiar a modo oscuro");
-      themeButton.setAttribute("aria-pressed", String(isDark));
-    }
+        document.querySelectorAll('.fade-up-section').forEach(el => observer.observe(el));
 
-    themeButton.addEventListener("click", () => {
-      const nextTheme = root.dataset.theme === "dark" ? "light" : "dark";
-      const buttonBox = themeButton.getBoundingClientRect();
-      const waveX = buttonBox.left + buttonBox.width / 2;
-      const waveY = buttonBox.top + buttonBox.height / 2;
+        // Lógica del Cursor Personalizado
+        const cursor = document.querySelector('.custom-cursor');
+        const follower = document.querySelector('.custom-cursor-follower');
+        let mouseX = 0, mouseY = 0;
+        let followerX = 0, followerY = 0;
 
-      root.style.setProperty("--wave-x", `${waveX}px`);
-      root.style.setProperty("--wave-y", `${waveY}px`);
-      root.classList.add("theme-switching");
-      root.dataset.theme = nextTheme;
-      localStorage.setItem("portfolio-theme", nextTheme);
-      updateThemeButton();
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        });
 
-      window.setTimeout(() => {
-        root.classList.remove("theme-switching");
-      }, 780);
-    });
+        // Suavizado del seguidor del cursor
+        function render() {
+            followerX += (mouseX - followerX) * 0.1;
+            followerY += (mouseY - followerY) * 0.1;
+            follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0)`;
+            requestAnimationFrame(render);
+        }
+        requestAnimationFrame(render);
 
-    updateThemeButton();
+        // Estados del Cursor
+        const interactives = document.querySelectorAll('[data-cursor]');
+        interactives.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                const type = el.getAttribute('data-cursor');
+                if (type === 'hover') {
+                    follower.classList.add('cursor-hover');
+                } else if (type === 'view') {
+                    follower.classList.add('cursor-view');
+                    follower.textContent = 'VER';
+                }
+            });
+            el.addEventListener('mouseleave', () => {
+                follower.classList.remove('cursor-hover', 'cursor-view');
+                follower.textContent = '';
+            });
+        });
 
-    const skillsTrack = document.querySelector("[data-skills-track]");
-    const skillPrev = document.querySelector("[data-skill-prev]");
-    const skillNext = document.querySelector("[data-skill-next]");
-    let skillsAutoMove;
-    let isPointerDown = false;
-    let pointerStartX = 0;
-    let scrollStartX = 0;
-
-    function moveSkills(direction) {
-      const item = skillsTrack.querySelector(".skill-item");
-      const distance = item ? item.offsetWidth + 26 : 140;
-      skillsTrack.scrollBy({ left: distance * direction, behavior: "smooth" });
-    }
-
-    function loopSkills() {
-      const nearEnd = skillsTrack.scrollLeft + skillsTrack.clientWidth >= skillsTrack.scrollWidth - 8;
-      if (nearEnd) {
-        skillsTrack.scrollTo({ left: 0, behavior: "smooth" });
-        return;
-      }
-
-      moveSkills(1);
-    }
-
-    function startSkillsAutoMove() {
-      window.clearInterval(skillsAutoMove);
-      skillsAutoMove = window.setInterval(loopSkills, 2200);
-    }
-
-    function pauseSkillsAutoMove() {
-      window.clearInterval(skillsAutoMove);
-    }
-
-    skillPrev.addEventListener("click", () => moveSkills(-1));
-    skillNext.addEventListener("click", () => moveSkills(1));
-    skillsTrack.addEventListener("mouseenter", pauseSkillsAutoMove);
-    skillsTrack.addEventListener("mouseleave", startSkillsAutoMove);
-    skillsTrack.addEventListener("focusin", pauseSkillsAutoMove);
-    skillsTrack.addEventListener("focusout", startSkillsAutoMove);
-
-    skillsTrack.addEventListener("pointerdown", (event) => {
-      isPointerDown = true;
-      pointerStartX = event.clientX;
-      scrollStartX = skillsTrack.scrollLeft;
-      pauseSkillsAutoMove();
-      skillsTrack.setPointerCapture(event.pointerId);
-    });
-
-    skillsTrack.addEventListener("pointermove", (event) => {
-      if (!isPointerDown) return;
-      skillsTrack.scrollLeft = scrollStartX - (event.clientX - pointerStartX);
-    });
-
-    skillsTrack.addEventListener("pointerup", (event) => {
-      isPointerDown = false;
-      skillsTrack.releasePointerCapture(event.pointerId);
-      startSkillsAutoMove();
-    });
-
-    skillsTrack.addEventListener("pointercancel", () => {
-      isPointerDown = false;
-      startSkillsAutoMove();
-    });
-
-    startSkillsAutoMove();
-  </script>
+        // Efecto Magnético para botones
+        const magnetics = document.querySelectorAll('.magnetic');
+        magnetics.forEach(el => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                el.style.transform = `translate(${x * 0.3}px, ${y * 0.3}px)`;
+            });
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = `translate(0px, 0px)`;
+            });
+        });
+    </script>
 </body>
 </html>
