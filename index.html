@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -23,6 +23,7 @@
         <nav class="links">
             <a href="#proyectos" class="magnetic" data-cursor="hover">Trabajos</a>
             <a href="#info" class="magnetic" data-cursor="hover">Sobre mí</a>
+            <a href="#stack" class="magnetic" data-cursor="hover">Stack</a>
             <a href="#contacto" class="magnetic" data-cursor="hover">Contacto</a>
         </nav>
     </header>
@@ -41,7 +42,7 @@
                     </h1>
                     
                     <div class="hero-bottom-text">
-                        <p class="hero-bio">Transformo ideas complejas en experiencias web <em>memorables</em>, fluidas y respaldadas por arquitecturas de datos sólidas.</p>
+                        <p class="hero-bio">Estudiante de Análisis y Desarrollo de Software, enfocada en crear soluciones web <em>claras</em>, funcionales y bien organizadas. Me gusta convertir ideas en interfaces útiles, cuidando el diseño, la lógica y la experiencia del usuario.</p>
                         <div class="hero-actions">
                             <a href="assets/hoja-de-vida-yuleiny-lugo.pdf" class="hero-download magnetic" data-cursor="hover" download>
                                 Descargar hoja de vida
@@ -78,13 +79,16 @@
             </div>
         </section>
 
-        <!-- Marquesina Animada -->
-        <div class="marquee-container fade-up-section">
-            <div class="marquee">
-                <span>INTERFACES WEB — <span class="italic-serif">PWA</span> — BASES DE DATOS — <span class="italic-serif">PROTOTIPOS</span> — REACT — <span class="italic-serif">NEXT.JS</span> — </span>
-                <span>INTERFACES WEB — <span class="italic-serif">PWA</span> — BASES DE DATOS — <span class="italic-serif">PROTOTIPOS</span> — REACT — <span class="italic-serif">NEXT.JS</span> — </span>
+        <!-- Información -->
+        <section id="info" class="about-section fade-up-section">
+            <div class="about-grid">
+                <h2 class="section-heading">Sobre <span class="italic-serif">mí</span></h2>
+                <div class="about-text">
+                    <p class="large-text">Soy estudiante de <span class="italic-serif highlight-subtle">Análisis y Desarrollo de Software</span>, enfocada en crear soluciones digitales útiles, claras y bien estructuradas.</p>
+                    <p>Me interesa construir aplicaciones que conecten diseño, lógica y datos para resolver necesidades reales. En mis proyectos he trabajado interfaces web, aplicaciones progresivas, sistemas backend, bases de datos e integraciones, cuidando tanto la experiencia del usuario como el orden técnico del código.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
         <!-- Proyectos -->
         <section id="proyectos" class="work-section fade-up-section">
@@ -100,8 +104,18 @@
                     </div>
                     <div class="project-card-info">
                         <h3>AgroTrace</h3>
-                        <p class="project-tags">PWA / Trazabilidad Agrícola</p>
-                        <p class="project-desc">Aplicación web progresiva enfocada en el registro de productores, lotes y cosechas. Una interfaz moderna y funcional.</p>
+                        <p class="project-tags">PWA / Trazabilidad Agrícola / Experiencia de Campo</p>
+                        <div class="project-stack">
+                            <span class="tech-chip">React</span>
+                            <span class="tech-chip">Node.js</span>
+                            <span class="tech-chip">PostgreSQL</span>
+                        </div>
+                        <p class="project-desc">AgroTrace digitaliza el seguimiento de cultivos desde la finca hasta la entrega final. La plataforma permite registrar lotes, consultar estados y mantener información clave disponible para productores que necesitan decisiones rápidas, incluso en jornadas de trabajo exigentes.</p>
+                        <ul class="project-impact">
+                            <li>Convierte procesos manuales en registros claros y consultables.</li>
+                            <li>Mejora la visibilidad de cada etapa productiva.</li>
+                            <li>Diseñada como PWA para acceso ágil desde cualquier dispositivo.</li>
+                        </ul>
                         <a href="https://agrotrace.julieth.site" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
                     </div>
                 </article>
@@ -115,8 +129,18 @@
                     </div>
                     <div class="project-card-info">
                         <h3>ArtHuila</h3>
-                        <p class="project-tags">Marketplace / Comercio Electrónico</p>
-                        <p class="project-desc">Plataforma dedicada a la venta de artesanías, integrando un catálogo completo, carrito de compras y gestión de pedidos fluida.</p>
+                        <p class="project-tags">Marketplace / Comercio Local / Full-Stack</p>
+                        <div class="project-stack">
+                            <span class="tech-chip">Next.js</span>
+                            <span class="tech-chip">Tailwind CSS</span>
+                            <span class="tech-chip">MongoDB</span>
+                        </div>
+                        <p class="project-desc">ArtHuila conecta artesanos del Huila con compradores que buscan productos auténticos. El proyecto transforma una vitrina local en una experiencia digital cuidada, con navegación simple, presentación visual atractiva y una estructura pensada para impulsar ventas.</p>
+                        <ul class="project-impact">
+                            <li>Fortalece la presencia digital de emprendimientos artesanales.</li>
+                            <li>Organiza productos para facilitar descubrimiento y compra.</li>
+                            <li>Equilibra identidad cultural con una experiencia moderna.</li>
+                        </ul>
                         <a href="https://arthuila.yuleiny.site" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
                     </div>
                 </article>
@@ -130,24 +154,155 @@
                     </div>
                     <div class="project-card-info">
                         <h3>SIRC</h3>
-                        <p class="project-tags">Registro Ciudadano / Offline-first</p>
-                        <p class="project-desc">Sistema robusto de registro ciudadano. Diseñado para funcionar sin conexión y sincronizar de manera segura en la nube.</p>
+                        <p class="project-tags">Registro Ciudadano / Offline-first / Sincronización</p>
+                        <div class="project-stack">
+                            <span class="tech-chip">Flutter</span>
+                            <span class="tech-chip">SQLite</span>
+                            <span class="tech-chip">Firebase</span>
+                        </div>
+                        <p class="project-desc">SIRC está pensado para contextos donde la conectividad no siempre acompaña. Permite capturar información ciudadana de forma local, conservar los datos y sincronizarlos cuando la señal vuelve, reduciendo pérdida de información y mejorando la continuidad del trabajo en campo.</p>
+                        <ul class="project-impact">
+                            <li>Garantiza captura de datos aun sin conexión estable.</li>
+                            <li>Reduce reprocesos y pérdida de registros importantes.</li>
+                            <li>Prioriza almacenamiento local, sincronización y confiabilidad.</li>
+                        </ul>
                         <a href="https://github.com/yuleinylugo71" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
+                    </div>
+                </article>
+                <!-- Proyecto 4 -->
+                <article class="project-card fade-up-section reverse">
+                    <div class="project-card-image" data-cursor="view">
+                        <a href="https://juiciosevaluativos.yuleiny.site" target="_blank">
+                            <img src="assets/juicios.png" alt="G - Juicios">
+                        </a>
+                    </div>
+                    <div class="project-card-info">
+                        <h3>G - Juicios</h3>
+                        <p class="project-tags">Sistema Web / Gestión Académica / Automatización</p>
+                        <div class="project-stack">
+                            <span class="tech-chip">PHP</span>
+                            <span class="tech-chip">MySQL</span>
+                            <span class="tech-chip">JavaScript</span>
+                        </div>
+                        <p class="project-desc">G - Juicios centraliza el registro y seguimiento de juicios evaluativos para hacer más eficiente la gestión académica. El sistema ayuda a ordenar información, consultar avances y reducir tareas repetitivas dentro de procesos institucionales.</p>
+                        <ul class="project-impact">
+                            <li>Centraliza información académica en un flujo más organizado.</li>
+                            <li>Agiliza consultas y seguimiento de aprendices.</li>
+                            <li>Reduce carga operativa en procesos evaluativos.</li>
+                        </ul>
+                        <a href="https://juiciosevaluativos.yuleiny.site" target="_blank" class="project-link magnetic" data-cursor="hover">Ver Proyecto ↗</a>
                     </div>
                 </article>
             </div>
         </section>
 
-        <!-- Información -->
-        <section id="info" class="about-section fade-up-section">
-            <div class="about-grid">
-                <h2 class="section-heading">El <span class="italic-serif">Enfoque</span></h2>
-                <div class="about-text">
-                    <p class="large-text">No solo escribo código. Construyo <span class="italic-serif highlight-subtle">sistemas digitales</span> pensados para el usuario final.</p>
-                    <p>Soy estudiante de análisis y desarrollo de software con pasión por el diseño limpio y el orden técnico. Desde la estructuración de una base de datos PostgreSQL hasta la última animación CSS, me aseguro de que cada detalle aporte a una experiencia superior.</p>
+        <!-- Stack Tecnológico -->
+        <section id="stack" class="stack-section fade-up-section">
+            <div class="stack-header">
+                <h2 class="section-heading">Stack <span class="italic-serif">Tecnológico</span></h2>
+                <p>Herramientas y tecnologías que he utilizado para construir interfaces, APIs, bases de datos, despliegues e integraciones en proyectos reales.</p>
+            </div>
+
+            <div class="stack-grid">
+                <article class="stack-category fade-up-section">
+                    <div class="stack-category-header">
+                        <span class="stack-number">01</span>
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy">HTML5</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy">CSS3</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy">JavaScript</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" loading="lazy">TypeScript</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="" loading="lazy">Flutter / Dart</span>
+                        <span class="stack-tech"><span class="tech-mark">PWA</span>PWA</span>
+                    </div>
+                </article>
+
+                <article class="stack-category fade-up-section">
+                    <div class="stack-category-header">
+                        <span class="stack-number">02</span>
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy">Node.js</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="" loading="lazy">NestJS</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy">Express.js</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="" loading="lazy">TypeScript</span>
+                        <span class="stack-tech"><span class="tech-mark">API</span>REST API</span>
+                        <span class="stack-tech"><span class="tech-mark">JWT</span>JWT</span>
+                    </div>
+                </article>
+
+                <article class="stack-category fade-up-section">
+                    <div class="stack-category-header">
+                        <span class="stack-number">03</span>
+                        <h3>Bases de datos</h3>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="" loading="lazy">PostgreSQL</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="" loading="lazy">SQLite</span>
+                        <span class="stack-tech"><span class="tech-mark">SQL</span>SQL</span>
+                        <span class="stack-tech"><span class="tech-mark">ORM</span>TypeORM</span>
+                    </div>
+                </article>
+
+                <article class="stack-category fade-up-section">
+                    <div class="stack-category-header">
+                        <span class="stack-number">04</span>
+                        <h3>DevOps & herramientas</h3>
+                    </div>
+                    <div class="tech-grid">
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy">Git</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" loading="lazy">GitHub</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy">Docker</span>
+                        <span class="stack-tech"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="" loading="lazy">Docker Compose</span>
+                        <span class="stack-tech"><span class="tech-mark">DP</span>Dockploy</span>
+                        <span class="stack-tech"><span class="tech-mark">VPS</span>VPS</span>
+                    </div>
+                </article>
+
+                <article class="stack-category fade-up-section wide">
+                    <div class="stack-category-header">
+                        <span class="stack-number">05</span>
+                        <h3>Servicios & integraciones</h3>
+                    </div>
+                    <div class="tech-grid services-grid">
+                        <span class="stack-tech"><span class="tech-mark">CLD</span>Cloudinary</span>
+                        <span class="stack-tech"><span class="tech-mark">PAY</span>ePayco</span>
+                        <span class="stack-tech"><span class="tech-mark">MP</span>MiPaquete</span>
+                        <span class="stack-tech"><span class="tech-mark">MAIL</span>Nodemailer</span>
+                        <span class="stack-tech"><span class="tech-mark">i18n</span>i18next</span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="stack-projects fade-up-section">
+                <h3>Tecnologías aplicadas en proyectos</h3>
+                <div class="stack-project-list">
+                    <article>
+                        <span>AgroTrace</span>
+                        <p>NestJS · PostgreSQL · JavaScript · PWA</p>
+                    </article>
+                    <article>
+                        <span>ArtHuila</span>
+                        <p>JavaScript · NestJS · TypeScript · TypeORM · PostgreSQL · Cloudinary · ePayco · MiPaquete · Nodemailer · i18next</p>
+                    </article>
+                    <article>
+                        <span>SIRC</span>
+                        <p>Flutter · Dart · NestJS · PostgreSQL · SQLite · Docker · JWT</p>
+                    </article>
                 </div>
             </div>
         </section>
+
+        <!-- Marquesina Animada -->
+        <div class="marquee-container fade-up-section">
+            <div class="marquee">
+                <span>INTERFACES WEB — <span class="italic-serif">PWA</span> — BASES DE DATOS — <span class="italic-serif">PROTOTIPOS</span> — REACT — <span class="italic-serif">FLUTTER</span> — </span>
+                <span>INTERFACES WEB — <span class="italic-serif">PWA</span> — BASES DE DATOS — <span class="italic-serif">PROTOTIPOS</span> — REACT — <span class="italic-serif">FLUTTER</span> — </span>
+            </div>
+        </div>
 
         <!-- Contacto -->
         <section id="contacto" class="contact-section fade-up-section">
@@ -158,8 +313,14 @@
             
             <div class="contact-footer">
                 <div class="socials">
-                    <a href="https://github.com/yuleinylugo71" target="_blank" class="magnetic" data-cursor="hover">GitHub</a>
-                    <a href="#" class="magnetic" data-cursor="hover">LinkedIn</a>
+                    <a href="https://github.com/yuleinylugo71" target="_blank" class="social-button primary magnetic" data-cursor="hover">
+                        GitHub
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                    </a>
+                    <a href="#" class="social-button magnetic" data-cursor="hover">
+                        LinkedIn
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M7 17L17 7M9 7h8v8"/></svg>
+                    </a>
                 </div>
                 <div class="manifesto">
                     Función, <span class="italic-serif">arte</span> y código.
